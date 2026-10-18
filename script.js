@@ -49,6 +49,7 @@
     var lineas = [
       'Formación: Tu web profesional en 4 horas, con Claude y GitHub',
       'Fecha: sábado 7 de noviembre de 2026',
+      'Duración y precio: 4 horas · 125 €',
       '',
       'Nombre: ' + d.get('nombre'),
       'Correo: ' + d.get('email'),

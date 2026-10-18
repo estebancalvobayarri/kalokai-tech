@@ -89,6 +89,11 @@ header .btn{padding:11px 18px;font-size:15px}
 .curso-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px 40px}
 .curso-info{flex:1 1 520px;min-width:0;display:flex;flex-direction:column;gap:12px}
 .curso-info > p{color:var(--muted);max-width:66ch}
+.datos{display:flex;flex-wrap:wrap;align-items:center;gap:10px 24px;padding-top:4px}
+.duracion{display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--fg)}
+.duracion svg{width:20px;height:20px;color:var(--accent)}
+.precio{font-family:var(--display);font-weight:800;font-size:24px;letter-spacing:-.02em;color:var(--fg);font-variant-numeric:tabular-nums}
+.precio small{font-family:var(--body);font-size:14px;font-weight:500;letter-spacing:0;color:var(--muted);margin-left:4px}
 .curso .top{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 .tag{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
 .pill{font-size:13px;font-weight:600;padding:5px 12px;border-radius:999px;background:var(--surface);color:var(--muted);border:1px solid var(--line)}
