@@ -104,6 +104,10 @@
         <div class="top"><span class="tag">Web e IA</span><span class="pill">Nivel inicial</span></div>
         <h3>Tu web profesional en 4 horas, con Claude y GitHub</h3>
         <p>Crea tu identidad de marca, tu logo y tu página web con ayuda de la inteligencia artificial, y publícala en internet sin programar y sin coste de alojamiento.</p>
+        <div class="reserva">
+          <p class="aviso"><span class="aviso-dot" aria-hidden="true"></span><span><b>Plazas abiertas</b> · sábado 7 de noviembre</span></p>
+          <button class="btn btn-primary btn-reserva" type="button" data-reserva>Reservar plaza</button>
+        </div>
         <details>
           <summary>Ver programa</summary>
           <ul>
@@ -219,9 +223,41 @@
   </div>
 </footer>
 
+<dialog class="form-dialog" id="reserva" aria-labelledby="reserva-title">
+  <button class="dialog-close" type="button" aria-label="Cerrar">&times;</button>
+  <p class="eyebrow">Plazas abiertas · sábado 7 de noviembre de 2026</p>
+  <h2 id="reserva-title" class="dialog-title">Reserva tu plaza</h2>
+  <p class="dialog-intro">Tu web profesional en 4 horas, con Claude y GitHub. Déjanos tus datos y te confirmaremos la plaza, el horario, el lugar y el precio. Recuerda que necesitas portátil y una suscripción a Claude Pro.</p>
+  <form class="form" id="reserva-form" novalidate>
+    <div class="field">
+      <label for="r-nombre">Nombre y apellidos</label>
+      <input id="r-nombre" name="nombre" type="text" autocomplete="name" required>
+    </div>
+    <div class="field">
+      <label for="r-email">Correo electrónico</label>
+      <input id="r-email" name="email" type="email" autocomplete="email" required>
+    </div>
+    <div class="field field-wide">
+      <label for="r-telefono">Teléfono <span class="optional">(opcional)</span></label>
+      <input id="r-telefono" name="telefono" type="tel" autocomplete="tel">
+    </div>
+    <div class="field field-wide">
+      <label for="r-mensaje">¿Algo que debamos saber? <span class="optional">(opcional)</span></label>
+      <textarea id="r-mensaje" name="mensaje" rows="3" placeholder="A qué te dedicas, si ya tienes logo o dominio, dudas…"></textarea>
+    </div>
+    <label class="check field-wide"><input type="checkbox" id="r-acepto" name="acepto" required> <span>He leído la <a href="privacidad.html" target="_blank">política de privacidad</a> y acepto que Kalokai use estos datos para gestionar mi reserva.</span></label>
+    <div class="field-wide form-foot">
+      <button class="btn btn-primary" type="submit">Enviar reserva</button>
+      <p class="form-status" id="reserva-status" role="status" aria-live="polite"></p>
+    </div>
+    <p class="form-legal field-wide">Responsable: Esteban Calvo Bayarri (Kalokai). Finalidad: gestionar tu reserva. Legitimación: tu consentimiento. Destinatarios: no cedemos tus datos a terceros, salvo obligación legal. Derechos: acceso, rectificación, supresión y demás, en hola@kalokai.es. Más información en la <a href="privacidad.html" target="_blank">política de privacidad</a>.</p>
+  </form>
+</dialog>
+
 <a class="wa-float" href="https://wa.me/34653803390?text=Hola%20Kalokai%20Tech%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20las%20formaciones." target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3Z"/></svg>
 </a>
 
+<script src="script.js"></script>
 </body>
 </html>

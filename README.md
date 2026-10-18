@@ -7,6 +7,7 @@ Web de Kalokai Tech, la línea de Kalokai de formación en tecnología: formacio
 - `index.html`: inicio, con el enfoque, las formaciones y cómo funcionan. Los botones «Hablemos» y «Pide información» abren WhatsApp.
 - `privacidad.html` y `aviso-legal.html`: páginas legales.
 - `styles.css`: paleta, tipografía y maquetación.
+- `script.js`: formulario emergente para reservar plaza.
 - `favicon.svg`: icono del sitio.
 
 Es una web estática, sin dependencias ni compilación. Para verla en local, abre `index.html` en el navegador.
@@ -35,7 +36,7 @@ Logo: el símbolo de Kalokai (arco en pizarra y círculo en índigo) junto a «k
 
 ## Contacto
 
-Correo: `hola@kalokai.es`. WhatsApp: 653 803 390.
+El formulario de reserva (botón «Reservar plaza» de la formación de la web, convocatoria del 7 de noviembre de 2026) prepara un correo a `hola@kalokai.es` (en `script.js`). WhatsApp: 653 803 390.
 
 ## Publicación
 
