@@ -31,7 +31,7 @@
         <li><a href="#metodo">Cómo funcionan</a></li>
       </ul>
     </nav>
-    <a class="btn btn-primary" href="https://wa.me/34653803390?text=Hola%20Kalokai%20Tech%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20las%20formaciones." target="_blank" rel="noopener">Hablemos</a>
+    <a class="btn btn-primary" href="#contacto">Hablemos</a>
   </div>
 </header>
 
@@ -44,7 +44,7 @@
       <h1>Aprendizaje práctico<br><em>de tecnología útil.</em></h1>
       <p class="lead">Formaciones prácticas para manejar las <b>nuevas tecnologías</b> y sacarles el máximo provecho en el <b>día a día</b>. Explicadas sin tecnicismos y pensadas para que cualquiera pueda seguirlas.</p>
       <div class="actions">
-        <a class="btn btn-primary" href="https://wa.me/34653803390?text=Hola%20Kalokai%20Tech%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20las%20formaciones." target="_blank" rel="noopener">Pide información</a>
+        <a class="btn btn-primary" href="#contacto">Pide información</a>
         <a class="btn btn-ghost" href="#formaciones">Ver las formaciones</a>
       </div>
     </div>
@@ -277,6 +277,54 @@
   </div>
 </section>
 
+
+<section class="band contacto" id="contacto">
+  <div class="wrap contacto-grid">
+    <div class="contacto-intro">
+      <p class="eyebrow">Contacto</p>
+      <h2>Pide información.</h2>
+      <p class="lead">Elige la formación que te interesa y te contamos las próximas fechas, el formato y qué necesitas llevar.</p>
+      <ul class="contacto-datos">
+        <li><span>Correo</span><b>hola@kalokai.es</b></li>
+        <li><span>WhatsApp</span><b>653 803 390</b></li>
+      </ul>
+    </div>
+    <form class="form contacto-form" id="contacto-form" novalidate>
+      <div class="field">
+        <label for="c-nombre">Nombre</label>
+        <input id="c-nombre" name="nombre" type="text" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="c-email">Correo electrónico</label>
+        <input id="c-email" name="email" type="email" autocomplete="email" required>
+      </div>
+      <div class="field">
+        <label for="c-telefono">Teléfono <span class="optional">(opcional)</span></label>
+        <input id="c-telefono" name="telefono" type="tel" autocomplete="tel">
+      </div>
+      <div class="field">
+        <label for="c-formacion">Formación</label>
+        <select id="c-formacion" name="formacion">
+          <option>Tu web profesional en 4 horas, con Claude y GitHub</option>
+          <option>Iniciación a Power BI: de Excel a tu primer cuadro de mando</option>
+          <option>IA práctica para el día a día</option>
+          <option>Ciberseguridad para el día a día</option>
+          <option>Otra consulta</option>
+        </select>
+      </div>
+      <div class="field field-wide">
+        <label for="c-mensaje">Mensaje <span class="optional">(opcional)</span></label>
+        <textarea id="c-mensaje" name="mensaje" rows="4" placeholder="Cuéntanos qué te gustaría saber…"></textarea>
+      </div>
+      <label class="check field-wide"><input type="checkbox" id="c-acepto" name="acepto" required> <span>He leído la <a href="privacidad.html" target="_blank">política de privacidad</a> y acepto que Kalokai use estos datos para responder a mi consulta.</span></label>
+      <div class="field-wide form-foot">
+        <button class="btn btn-primary" type="submit">Enviar consulta</button>
+        <p class="form-status" id="contacto-status" role="status" aria-live="polite"></p>
+      </div>
+      <p class="form-legal field-wide">Responsable: Esteban Calvo Bayarri (Kalokai). Finalidad: responder a tu consulta. Legitimación: tu consentimiento. Destinatarios: no cedemos tus datos a terceros, salvo obligación legal. Derechos: acceso, rectificación, supresión y demás, en hola@kalokai.es. Más información en la <a href="privacidad.html" target="_blank">política de privacidad</a>.</p>
+    </form>
+  </div>
+</section>
 
 </main>
 

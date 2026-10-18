@@ -211,6 +211,20 @@ details[open] summary::after{content:"–"}
 .form-legal a:hover{color:var(--accent)}
 @media (max-width:680px){.form{grid-template-columns:1fr}}
 
+/* Contacto: formulario de información al final de la página */
+.contacto-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(32px,5vw,64px);align-items:start}
+.contacto-intro{display:flex;flex-direction:column;gap:14px}
+.contacto-intro h2{font-size:clamp(32px,4.4vw,52px);letter-spacing:-.025em}
+.contacto-datos{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
+.contacto-datos li{display:flex;flex-direction:column;gap:2px}
+.contacto-datos span{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.contacto-datos b{font-size:18px;font-weight:600;user-select:all}
+.contacto-form{background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:clamp(24px,3.4vw,40px)}
+.form select{font:inherit;color:var(--fg);background-color:var(--bg);border:1px solid var(--line);border-radius:14px;padding:13px 40px 13px 16px;width:100%;appearance:none;background-repeat:no-repeat;background-size:6px 6px;background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);background-position:calc(100% - 22px) 50%,calc(100% - 16px) 50%}
+.form select:focus-visible{outline:2px solid var(--accent);outline-offset:0;border-color:var(--accent)}
+.contacto-form input,.contacto-form textarea,.contacto-form select{background-color:var(--surface)}
+@media (max-width:860px){.contacto-grid{grid-template-columns:1fr}}
+
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 
 /* Páginas legales: una sola columna de texto */

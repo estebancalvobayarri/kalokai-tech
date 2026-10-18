@@ -72,3 +72,45 @@ document.querySelectorAll('details[name="formaciones"]').forEach(function (d, _,
     todos.forEach(function (o) { if (o !== d) o.open = false; });
   });
 });
+
+// Kalokai Tech: formulario de contacto. El envío prepara un correo a hola@kalokai.es con los datos.
+(function () {
+  var form = document.getElementById('contacto-form');
+  if (!form) return;
+  var status = document.getElementById('contacto-status');
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    var faltan = [];
+    ['c-nombre', 'c-email'].forEach(function (id) {
+      var input = document.getElementById(id);
+      var valido = input.value.trim() !== '' && input.checkValidity();
+      input.parentElement.classList.toggle('invalid', !valido);
+      input.setAttribute('aria-invalid', String(!valido));
+      if (!valido) faltan.push(input);
+    });
+    var acepto = document.getElementById('c-acepto');
+    if (faltan.length || !acepto.checked) {
+      status.textContent = faltan.length
+        ? 'Revisa los campos marcados para poder enviar la consulta.'
+        : 'Marca la casilla de aceptación para poder enviar la consulta.';
+      status.classList.add('error');
+      (faltan[0] || acepto).focus();
+      return;
+    }
+    var d = new FormData(form);
+    var lineas = [
+      'Formación: ' + d.get('formacion'),
+      '',
+      'Nombre: ' + d.get('nombre'),
+      'Correo: ' + d.get('email'),
+      'Teléfono: ' + (d.get('telefono') || '—'),
+      '',
+      d.get('mensaje') || ''
+    ];
+    window.location.href = 'mailto:hola@kalokai.es' +
+      '?subject=' + encodeURIComponent('Kalokai Tech · Información · ' + d.get('formacion')) +
+      '&body=' + encodeURIComponent(lineas.join('\n'));
+    status.classList.remove('error');
+    status.textContent = 'Hemos abierto tu correo con la consulta preparada. Solo falta enviarla. Si no se abre, escríbenos a hola@kalokai.es o por WhatsApp.';
+  });
+})();
