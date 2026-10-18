@@ -4,10 +4,9 @@ Web de Kalokai Tech, la línea de Kalokai de formación en tecnología: formacio
 
 ## Estructura
 
-- `index.html`: inicio, con el enfoque, las formaciones, cómo funcionan y contacto.
+- `index.html`: inicio, con el enfoque, las formaciones y cómo funcionan. Los botones «Hablemos» y «Pide información» abren WhatsApp.
 - `privacidad.html` y `aviso-legal.html`: páginas legales.
 - `styles.css`: paleta, tipografía y maquetación.
-- `script.js`: botones para copiar el correo y el WhatsApp.
 - `favicon.svg`: icono del sitio.
 
 Es una web estática, sin dependencias ni compilación. Para verla en local, abre `index.html` en el navegador.
