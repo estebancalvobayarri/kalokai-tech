@@ -1,6 +1,6 @@
 # Kalokai Tech
 
-Web de Kalokai Tech, la línea de Kalokai de formación en tecnología: formaciones privadas y prácticas, abiertas a cualquier persona, para manejar las nuevas tecnologías y sacarles el máximo provecho en el día a día. A diferencia de Kalokai y Kalokai Educa, no está orientada a formación bonificada ni a un público concreto. El catálogo irá creciendo. «Tecnología útil, aprendida haciendo».
+Web de Kalokai Tech, la línea de Kalokai de formación en tecnología: formaciones privadas y prácticas, abiertas a cualquier persona, para manejar las nuevas tecnologías y sacarles el máximo provecho en el día a día. A diferencia de Kalokai y Kalokai Educa, no está orientada a formación bonificada ni a un público concreto. El catálogo irá creciendo. «Aprendizaje práctico de tecnología útil».
 
 ## Estructura
 
