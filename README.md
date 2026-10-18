@@ -1,10 +1,10 @@
 # Kalokai Tech
 
-Web de Kalokai Tech, la línea de Kalokai de formación en tecnología: formaciones prácticas en inteligencia artificial, datos y herramientas digitales, sin necesidad de conocimientos técnicos. «Tecnología útil, aprendida haciendo».
+Web de Kalokai Tech, la línea de Kalokai de formación en tecnología: formaciones privadas y prácticas, abiertas a cualquier persona, para manejar las nuevas tecnologías y sacarles el máximo provecho en el día a día. A diferencia de Kalokai y Kalokai Educa, no está orientada a formación bonificada ni a un público concreto. El catálogo irá creciendo. «Tecnología útil, aprendida haciendo».
 
 ## Estructura
 
-- `index.html`: inicio, con el enfoque, las cuatro formaciones, cómo trabajamos y contacto.
+- `index.html`: inicio, con el enfoque, las formaciones, cómo funcionan y contacto.
 - `privacidad.html` y `aviso-legal.html`: páginas legales.
 - `styles.css`: paleta, tipografía y maquetación.
 - `script.js`: botones para copiar el correo y el WhatsApp.
@@ -12,11 +12,11 @@ Web de Kalokai Tech, la línea de Kalokai de formación en tecnología: formacio
 
 Es una web estática, sin dependencias ni compilación. Para verla en local, abre `index.html` en el navegador.
 
-## Formaciones
+## Formaciones (primeras)
 
 1. Tu web profesional en 4 horas, con Claude y GitHub.
 2. Iniciación a Power BI: de Excel a tu primer cuadro de mando.
-3. IA práctica para el trabajo diario.
+3. IA práctica para el día a día.
 4. Ciberseguridad para el día a día.
 
 ## Identidad visual
