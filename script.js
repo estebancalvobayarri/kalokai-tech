@@ -1,3 +1,44 @@
+// Cabecera: menú para móvil y tablet con los mismos enlaces del menú principal, y línea inferior al desplazarse (como en kalokai.es)
+(function () {
+  var cabecera = document.querySelector('.header-inner');
+  var menu = document.querySelector('.nav');
+  if (cabecera && menu) {
+    var boton = document.createElement('button');
+    boton.className = 'menu-toggle';
+    boton.type = 'button';
+    boton.setAttribute('aria-expanded', 'false');
+    boton.setAttribute('aria-controls', 'menu-movil');
+    boton.setAttribute('aria-label', 'Abrir menú');
+    boton.innerHTML = '<span></span><span></span><span></span>';
+    cabecera.appendChild(boton);
+
+    var panel = document.createElement('nav');
+    panel.className = 'mobile-menu';
+    panel.id = 'menu-movil';
+    panel.setAttribute('aria-label', 'Menú');
+    panel.hidden = true;
+    panel.innerHTML = '<ul class="wrap">' + menu.innerHTML + '</ul>';
+    cabecera.parentNode.appendChild(panel);
+
+    function abrirMenu(abierto) {
+      panel.hidden = !abierto;
+      boton.setAttribute('aria-expanded', String(abierto));
+      boton.setAttribute('aria-label', abierto ? 'Cerrar menú' : 'Abrir menú');
+      boton.classList.toggle('open', abierto);
+    }
+    boton.addEventListener('click', function () { abrirMenu(panel.hidden); });
+    panel.addEventListener('click', function (e) { if (e.target.closest('a')) abrirMenu(false); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') abrirMenu(false); });
+    window.addEventListener('resize', function () { if (window.innerWidth > 980) abrirMenu(false); });
+  }
+  var header = document.querySelector('.site-header');
+  if (header) {
+    var onScroll = function () { header.classList.toggle('scrolled', window.scrollY > 8); };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+})();
+
 // Kalokai Tech: formulario emergente para reservar plaza.
 // Los botones con data-reserva lo abren. El envío prepara un correo a DESTINO con los datos.
 (function () {
