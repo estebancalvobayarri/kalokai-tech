@@ -5,7 +5,7 @@
   --indigo:#4F46E5; --indigo-deep:#312E81; --cyan:#06B6D4; --lime:#84CC16;
   --bg:#F8FAFC; --surface:#FFFFFF; --tint:#EEF0FD; --line:#E2E8F0;
   --fg:#0F172A; --muted:#475569; --accent:#4F46E5; --accent-ink:#FFFFFF;
-  --band-dark:#312E81; --band-dark-fg:#F8FAFC; --band-dark-muted:#C7CBF5; --foot-bg:#F1F3F8; --educa:#2456C9; --line-strong:#94A3B8; --family-a:#64748B; --family-b:#94A3B8; --error:#C8242F;
+  --band-dark:#312E81; --band-dark-fg:#F8FAFC; --band-dark-muted:#C7CBF5; --foot-bg:#F1F3F8; --educa:#2456C9; --line-strong:#94A3B8; --family-a:#64748B; --family-b:#94A3B8; --error:#C8242F; --curso-open:#E9EDF4;
   --display:'Bricolage Grotesque', 'Arial Black', Arial, sans-serif;
   --body:Figtree, 'Segoe UI', Arial, sans-serif;
   --r:28px;
@@ -13,11 +13,11 @@
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#0B1120; --surface:#131B2E; --tint:#1B1F45; --line:#26324A;
   --fg:#F1F5F9; --muted:#A3AEC2; --accent:#8B85FF; --accent-ink:#0B1120;
-  --band-dark:#1E1B4B; --band-dark-fg:#F1F5F9; --band-dark-muted:#C7CBF5; --foot-bg:#0E1526; --educa:#7FA2F2; --line-strong:#475569; --family-a:#94A3B8; --family-b:#64748B; --error:#F87171; color-scheme:dark}}
+  --band-dark:#1E1B4B; --band-dark-fg:#F1F5F9; --band-dark-muted:#C7CBF5; --foot-bg:#0E1526; --educa:#7FA2F2; --line-strong:#475569; --family-a:#94A3B8; --family-b:#64748B; --error:#F87171; --curso-open:#162038; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#0B1120; --surface:#131B2E; --tint:#1B1F45; --line:#26324A;
   --fg:#F1F5F9; --muted:#A3AEC2; --accent:#8B85FF; --accent-ink:#0B1120;
-  --band-dark:#1E1B4B; --band-dark-fg:#F1F5F9; --band-dark-muted:#C7CBF5; --foot-bg:#0E1526; --educa:#7FA2F2; --line-strong:#475569; --family-a:#94A3B8; --family-b:#64748B; --error:#F87171; color-scheme:dark}
+  --band-dark:#1E1B4B; --band-dark-fg:#F1F5F9; --band-dark-muted:#C7CBF5; --foot-bg:#0E1526; --educa:#7FA2F2; --line-strong:#475569; --family-a:#94A3B8; --family-b:#64748B; --error:#F87171; --curso-open:#162038; color-scheme:dark}
 
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
@@ -112,6 +112,8 @@ details[open] summary::after{content:"–"}
 .llevas li{background:var(--surface);border-radius:22px;padding:24px;min-width:0}
 .llevas li.hl{background:var(--tint)}
 .llevas svg{width:30px;height:30px;color:var(--accent);display:block;margin-bottom:14px}
+.curso{transition:background-color .25s ease,border-color .25s ease}
+.curso:has(details[open]){background:var(--curso-open);border-color:var(--line-strong)}
 @media (max-width:1000px){.programa,.llevas{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){.programa,.llevas{grid-template-columns:1fr}}
 

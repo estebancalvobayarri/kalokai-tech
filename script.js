@@ -63,3 +63,11 @@
     status.textContent = 'Hemos abierto tu correo con la reserva preparada. Solo falta enviarla. Si no se abre, escríbenos a hola@kalokai.es o por WhatsApp.';
   });
 })();
+
+// Formaciones: solo una desplegada a la vez (respaldo para navegadores sin <details name>)
+document.querySelectorAll('details[name="formaciones"]').forEach(function (d, _, todos) {
+  d.addEventListener('toggle', function () {
+    if (!d.open) return;
+    todos.forEach(function (o) { if (o !== d) o.open = false; });
+  });
+});
