@@ -145,7 +145,7 @@ details li::before{content:"";flex:none;width:8px;height:8px;margin-top:.62em;bo
 .footer-brand .logo-word{font-size:1.6rem}
 .footer-brand .logo-mark{width:30px;height:30px}
 .footer-inner .footer-claim{color:var(--fg);font-weight:300;font-style:italic;font-size:.9rem;line-height:1.4}
-.footer-family{display:flex;align-items:center;gap:12px;margin-top:16px}
+.footer-family{display:flex;align-items:center;gap:12px;margin-top:42px}
 .family-word{font-family:var(--display);font-weight:800;font-size:1.1rem;line-height:1;letter-spacing:-.045em;color:var(--fg);text-decoration:none;opacity:.85;transition:opacity .2s ease}
 .family-word:hover{opacity:1}
 .family-educa{color:var(--educa);letter-spacing:-.03em;margin-left:.18em}
@@ -166,7 +166,7 @@ details li::before{content:"";flex:none;width:8px;height:8px;margin-top:.62em;bo
   .footer-brand,.footer-contact{display:contents}
   .footer-brand .logo{order:1}
   .footer-claim{order:2;margin-top:10px!important}
-  .footer-family{order:3;margin-top:18px}
+  .footer-family{order:3;margin-top:36px}
   .footer-links{order:3;margin:28px 0!important}
   .footer-social{order:4}
   .footer-inner .small{order:6;margin-top:14px}
